@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Senko san</title>
+        <title>Pat Senko san</title>
         <meta charset="utf-8">
         <meta httpequiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="title" content="Senko san">
+        <meta name="title" content="Pat Senko san">
         <meta name="description" content="Not a head pat we need, but a head pat we deserved.">
 
-        <meta property="og:title" content="Senko san">
+        <meta property="og:title" content="Pat Senko san">
         <meta property="og:description" content="Not a head pat we need, but a head pat we deserved.">
 
-        <meta property="og:image" content="https://raw.githubusercontent.com/aomkirby123/platelets/master/app/assets/sprite/platelets_0.jpg">
-        <meta property="og:image:width" content="1280">
-        <meta property="og:image:height" content="720">
+        <meta property="og:image" content="https://raw.githubusercontent.com/aomkirby123/pat-senko/master/img/senko_normal.jpg">
+        <meta property="og:image:width" content="1600">
+        <meta property="og:image:height" content="900">
         <meta property="og:image:alt" content="Not a head pat we need, but a head pat we deserved.">
+        
+        <meta name="twitter:title" content="Pat Senko san">
+        <meta name="twitter:description" content="Not a head pat we need, but a head pat we deserved.">
+        <meta name="twitter:creator" content="@SaltyAom">
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/aomkirby123/pat-senko/master/img/senko_normal.jpg">
+        <meta name="twitter:card" content="summary_large_image">
 
         <meta name="apple-mobile-web-app-capable" content="yes">
 
@@ -35,10 +41,19 @@
                 -moz-user-select: none;
                 -webkit-user-drag: none;
             }
+
+            @media screen and (max-width: 767.9px){
+                #senko-san {
+                    object-position: 15% center;
+                }
+            }
         </style>
     </head>
     <body id=body>
-        <img id=senko-san src=/img/senko_normal.jpg alt="Platelets" tabindex=0 />
+        <img id=senko-san src=/img/senko_normal.jpg alt=Senko tabindex=0 />
+		<audio id=background-music preload=metadata loop volume=0>
+			<source src=https://raw.githubusercontent.com/aomkirby123/pat-senko/master/sound/senko_san_op.mp3 type=audio/mpeg />
+        </audio>
     </body>
     <script src=/index.js></script>
 </html>

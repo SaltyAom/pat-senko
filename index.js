@@ -13,7 +13,11 @@ const patSenko = [
 /* Config */
 const senko = document.getElementById("senko-san")
     patEnd = patSenko.length - 2,
-    patting = false
+    patting = false,
+    playingMusic = false,
+    backgroundMusic = document.getElementById("background-music")
+
+backgroundMusic.volume = 0.5
 
 /* Helper Function */
 const act = (observer, callback, events) =>
@@ -43,10 +47,14 @@ const stopPat = () => {
 const calm = () => stopPat()
 
 const pat = (stillRight = 0, goRight) =>
-	setTimeout(() => {
+
+    setTimeout(() => {
         let hand = stillRight,
-            move = hand,
-            patLeft = 0
+        move = hand,
+        patLeft = 0
+    
+        if(!playingMusic)
+            backgroundMusic.play()
 
         if (!patting)
             return stopPat()

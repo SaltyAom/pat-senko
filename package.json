@@ -1,16 +1,17 @@
 {
-  "name": "senko-san",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
-  },
-  "dependencies": {
-    "pre-image": "^0.2.1"
-  },
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  }
+	"name": "senko-san",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "parcel index.html",
+		"build": "parcel build index.html",
+		"now-build": "parcel build index.html"
+	},
+	"dependencies": {
+		"pre-image": "^0.2.1"
+	},
+	"devDependencies": {
+		"parcel-bundler": "^1.12.4"
+	}
 }
