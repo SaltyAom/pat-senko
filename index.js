@@ -28,7 +28,7 @@ const act = (observer, callback, events) =>
 const is = (move, patEnd = 0) => move > patEnd ? true : false
 const not = (move, patEnd = 0) => move === patEnd ? true : false
 
-const patAnd = (move) => senko.src = patSenko[move]
+const patAnd = (move) => senko.style.backgroundImage = `url(${patSenko[move]})`
 
 const toRight = (move) => --move
 const toLeft = (move) => ++move
@@ -40,7 +40,7 @@ const patHandler = () => {
 
 const stopPat = () => {
 	patting = false
-	return senko.src = require("/img/senko_normal.jpg")
+	return senko.style.backgroundImage = `url(${require("/img/senko_normal.jpg")})`
 }
 
 /* Act Function */
