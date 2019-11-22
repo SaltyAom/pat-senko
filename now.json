@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "name": "Pat Senko now",
+    "alias": "pat-senko.now.sh",
+    "builds": [
+        { 
+            "src": "package.json", 
+            "use": "@now/static-build"
+        }
+    ],
+    "routes": [
+        {
+            "src":"/.*",
+            "headers": { 
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET",
+                "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept",
+                "cache-control": "public,max-age=31536000",
+                "Accept-Encoding": "br",
+                "Service-Worker-Allowed": "/",
+                "Vary": "Accept-Encoding"
+            } 
+        }
+    ],
+    "regions": ["all"]
+}
