@@ -3,15 +3,15 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"license": "MIT",
+	"type": "module",
 	"scripts": {
-		"dev": "parcel index.html",
-		"build": "parcel build index.html",
-		"now-build": "parcel build index.html"
+		"dev": "vite",
+		"build": "vite build",
+		"now-build": "vite build",
+		"preview": "vite preview"
 	},
-	"dependencies": {
-		"pre-image": "^0.2.1"
-	},
+	"dependencies": {},
 	"devDependencies": {
-		"parcel-bundler": "^1.12.4"
+		"vite": "^4.5.0"
 	}
 }

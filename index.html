@@ -30,6 +30,7 @@
                 width: 100%;
                 height: 100vh;
                 margin: 0;
+                cursor: pointer;
             }
 
             #senko-san {
@@ -49,12 +50,20 @@
                 }
             }
         </style>
+
+        <link rel="preload" href="/img/senko_0.jpg" as="image">
+        <link rel="preload" href="/img/senko_1.jpg" as="image">
+        <link rel="preload" href="/img/senko_2.jpg" as="image">
+        <link rel="preload" href="/img/senko_3.jpg" as="image">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
     </head>
     <body id=body>
         <div id=senko-san alt=Senko tabindex=0 draggable=false></div>
 		<audio id=background-music preload=metadata loop volume=0.5>
-			<source src=https://raw.githubusercontent.com/aomkirby123/pat-senko/master/sound/senko_san_op.mp3 type=audio/mpeg />
+			<source src="/sound/senko_san_op.mp3" type=audio/mpeg />
         </audio>
     </body>
-    <script src=/index.js></script>
+    <script type="module" src=/index.js></script>
+    
 </html>
