@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@builder.io/partytown@^0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.8.1.tgz#d50f2508b2e9b554ac890e8130c60b27cfb5958a"
-  integrity sha512-p4xhEtQCPe8YFJ8e7KT9RptnT+f4lvtbmXymbp1t0bLp+USkNMTxrRMNc3Dlr2w2fpxyX7uA0CyAeU3ju84O4A==
-
 "@esbuild/android-arm64@0.18.20":
   version "0.18.20"
   resolved "https://registry.yarnpkg.com/@esbuild/android-arm64/-/android-arm64-0.18.20.tgz#984b4f9c8d0377443cc2dfcef266d02244593622"

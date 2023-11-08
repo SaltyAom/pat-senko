@@ -10,9 +10,7 @@
 		"now-build": "vite build",
 		"preview": "vite preview"
 	},
-	"dependencies": {
-		"@builder.io/partytown": "^0.8.1"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"vite": "^4.5.0"
 	}
